@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07182b,
+            #0d2940 45%,
+            #071321
+        );
+
+    color: #17212b;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1080px;
+
+    margin: auto;
+    padding: 40px 50px;
+
+    background: #f1f2ee;
+
+    position: relative;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+}
+
+.pagina::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -250px;
+    top: 300px;
+
+    border: 70px solid rgba(10, 48, 78, 0.035);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+header {
+    position: relative;
+
+    padding-bottom: 20px;
+}
+
+.cabecera-superior {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #6d7780;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 18px;
+}
+
+.numero-grande {
+    color: #d2a52f;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 90px;
+
+    line-height: 0.8;
+}
+
+h1 {
+    margin: 0;
+
+    color: #0b2944;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 78px;
+
+    line-height: 0.9;
+
+    letter-spacing: 2px;
+}
+
+.titulo p {
+    margin: 7px 0 0;
+
+    color: #68747d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.linea-cabecera {
+    width: 100%;
+
+    height: 5px;
+
+    margin-top: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #092d4b 70%,
+            #d2a52f 70%
+        );
+}
+
+.perfil {
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(12, 30, 45, 0.12);
+}
+
+.foto {
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0a2e4c,
+            #071a2c
+        );
+}
+
+.foto-contenedor {
+    width: 100%;
+    height: 430px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 3px solid #d2a52f;
+
+    background: #0a1722;
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.etiqueta-foto {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    padding: 8px 14px;
+
+    color: #0a2944;
+
+    background: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.esquina-foto {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    padding: 7px 11px;
+
+    color: #ffffff;
+
+    background: #d2a52f;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.informacion {
+    padding: 40px 38px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eef0ed
+        );
+}
+
+.categoria {
+    color: #d2a52f;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.informacion h2 {
+    margin: 15px 0 20px;
+
+    color: #0a2c49;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 43px;
+
+    line-height: 1.02;
+
+    letter-spacing: 1px;
+}
+
+.informacion h2 strong {
+    color: #d2a52f;
+}
+
+.informacion p {
+    color: #66727b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.posicion {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.posicion div {
+    padding: 12px;
+
+    color: #163550;
+
+    background: #e8ebe8;
+
+    border-left: 4px solid #d2a52f;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.posicion small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #7b858b;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.boton {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 25px 0;
+
+    padding: 18px 25px;
+
+    background: #092c48;
+}
+
+.texto-boton small {
+    display: block;
+
+    color: #d2a52f;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.texto-boton span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #d9e0e4;
+
+    font-size: 11px;
+}
+
+.boton a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 13px 22px;
+
+    color: #0a2944;
+
+    background: #d2a52f;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.boton a:hover {
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.boton a b {
+    font-size: 18px;
+}
+
+.trayectoria {
+    padding: 35px 40px;
+
+    background: #ffffff;
+
+    border-top: 6px solid #0a2d49;
+
+    box-shadow:
+        0 8px 25px rgba(12, 30, 45, 0.08);
+}
+
+.titulo-seccion {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.titulo-seccion span {
+    color: #d2a52f;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.titulo-seccion h2 {
+    margin: 8px 0 0;
+
+    color: #092d4a;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 35px;
+
+    letter-spacing: 1px;
+}
+
+.balon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #0a2d49;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    transform: rotate(-12deg);
+}
+
+.linea {
+    width: 100%;
+
+    height: 2px;
+
+    margin: 20px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d2a52f,
+            #d2a52f 30%,
+            #dfe2df 30%
+        );
+}
+
+.trayectoria p {
+    color: #68747b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.estadisticas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.estadistica {
+    padding: 18px;
+
+    background: #f0f2ef;
+
+    text-align: center;
+
+    border-bottom: 4px solid #d2a52f;
+}
+
+.estadistica strong {
+    display: block;
+
+    color: #0a2d4a;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 30px;
+}
+
+.estadistica span {
+    color: #7c858a;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.frase-final {
+    margin-top: 25px;
+
+    padding: 30px 35px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #d2a52f,
+            #e0bd5c
+        );
+
+    text-align: center;
+}
+
+.frase-final span {
+    color: #5b4611;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 4px;
+}
+
+.frase-final h2 {
+    max-width: 700px;
+
+    margin: 12px auto 0;
+
+    color: #092d49;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.linea-footer {
+    width: 100%;
+
+    height: 1px;
+
+    background: #c5c9c7;
+}
+
+.datos {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 18px;
+
+    color: #52606a;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.datos small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #d2a52f;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.marca {
+    margin: 22px 0 0;
+
+    color: #9aa2a6;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .pagina {
+        padding: 25px 18px;
+    }
+
+    .titulo {
+        gap: 15px;
+    }
+
+    .numero-grande {
+        font-size: 65px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    .perfil {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-contenedor {
+        height: 350px;
+    }
+
+    .boton {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    .boton a {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .trayectoria {
+        padding: 28px 22px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 27px;
+    }
+
+    .estadisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .datos {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+}
